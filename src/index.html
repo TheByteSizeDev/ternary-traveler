@@ -6,11 +6,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <title>Document</title>
 </head>
 
 <body>
-  <article id="container"></article>
+  <article id="container">
+    <h1>My Places</h1> 
+      <div id = "addInterestDiv"></div>
+      <div id = "listContainer">
+        <div id = "indvPlaceCont-1">
+          <h2>Rome, Italy</h2>
+            <h3>Points Of Interest:</h3> <i class="material-icons">
+                add_circle_outline
+                </i>
+              <div id= "indvInterestCont-1">
+                <h4>Hot Air Balloon</h4> 
+                <i class="material-icons">edit</i>
+                <i class="material-icons">delete</i>
+                <p>Description: <br>
+                There were hot air balloons here and they fly in the air.</p>
+                <p>Cost: $30.00</p>
+                <p>Review: <br> 
+                This was really awesome! Make sure to bring a jacket its cold up there. Despite the heat!</p>
+              </div>
+              <div id= "indvInterestCont-2">
+                  <h4>Hot Air Balloon</h4>
+                  <p>Description: <br>
+                  There were hot air balloons here and they fly in the air.</p>
+                  <p>Cost: $30.00</p>
+                  <p class="hideThis">Review: <br> 
+                  This was really awesome! Make sure to bring a jacket its cold up there. Despite the heat!</p>
+              </div>
+            </div>
+
+              <h3>Add Point Of Interest</h3>
+              <fieldset> 
+                <label for="interestName">Name:</label>
+                <input id="addName" type="text" name="interestName"/>
+              </fieldset>
+              <fieldset> 
+                  <label for="interestDescription">Description:</label>
+                  <textarea
+                      id="addDescription"
+                      class="text-box"
+                      wrap="hard"
+                      rows="3"
+                      type="text"
+                      name="interestDescription"
+                    ></textarea>
+              </fieldset>
+              <fieldset> 
+                  <label for="interestCost">Cost:</label>
+                  <input id="addCost" type="text" name="interestCost"/>
+              </fieldset>
+              <fieldset>
+                  <label for="interestPlace">Place:</label>
+                  <select id="addToPlace" name="interestPlace">
+                    <option value="">Please Choose One</option>
+                    <option value="Boca Raton">Boca Raton</option>
+                    <option value="Rome, Italy">Rome, Italy</option>
+                    <option value="Luanda, Angola">Luanda, Angola</option>
+                  </select>
+                  <i class="material-icons">check_circle</i>
+                </fieldset>
+
+                <fieldset>
+                <label for="editInterestCost">Cost:</label>
+                <input id="editCost" type="text" name="editInterestCost"/>
+                </fieldset>
+                <fieldset>
+                <label for="editInterestReview">Add Review:</label>
+                  <textarea
+                      id="editReview"
+                      class="text-box"
+                      wrap="hard"
+                      rows="3"
+                      type="text"
+                      name="editInterestReview"
+                  ></textarea>
+                  <i class="material-icons">check_circle</i>
+                </fieldset>
+                
+
+      </div>
+  </article>
+
+
 </body>
 
 </html>

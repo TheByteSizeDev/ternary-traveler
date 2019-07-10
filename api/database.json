@@ -1,24 +1,28 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "id": 2,
-      "title": "json-server",
-      "author": "typicode"
-    }
+  "places": [
+      {
+          "name": "Boca Raton, Florida",
+          "visa_required": false,
+          "id": 1
+      },
+      {
+          "name": "Rome, Italy",
+          "visa_required": false,
+          "id": 2
+      },
+      {
+          "name": "Luanda, Angola",
+          "visa_required": true,
+          "id": 3
+      }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "interests": [
+      {
+          "placeId" : 1,
+          "name" : "Butterfly World",
+          "description" : "Largest butterfly park in the world, and the first park of its kind in the Western Hemisphere.",
+          "cost" : "$29.95",
+          "Review" : "Totally worth the price of entry. The butterflies were SICK! In a good way, not in a health way. The butterflies were fine."
+      }
+  ]
 }
